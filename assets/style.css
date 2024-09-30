@@ -1,7 +1,15 @@
+:root {
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color: #00F4BF;
+}
+
+
 body {
-    background-color: #424242;
+    background: url('img/bg-desktop.webp');
     font-family: Bai Jamjuree;
 }
+
 
 #container {
     display: flex; /* Elementos dispostos em linha */
@@ -9,20 +17,22 @@ body {
 
 .cartao {
     margin: 1rem 1rem;
-    background-color:#229799;
-    height: 20rem;
+    
+        height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
 
 .cartao__conteudo {
+    background-color: var(--card-front-color);
     text-align: center;
     /* background-color: aquamarine; */
     height: 100%;
 }
 
 .cartao__conteudo h3 {
-    background-color:#F5F5F5;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -36,7 +46,15 @@ body {
     padding: 2rem;
 }
 
+.cartao__conteudo__pergunta { 
+    font-weight: 500;
+color: var(--text-color);
+}
 
+.cartao__conteudo__resposta{
+    font-weight: 700;
+color : var(--card-back-color);
+}
 
 
 
@@ -51,7 +69,7 @@ footer {
     height: 2rem;
 }
 
-footer p {
+footer p { 
     text-align: center;
     font-size: 0.6rem;
     margin-top: 0.5rem;

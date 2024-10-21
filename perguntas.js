@@ -1,5 +1,5 @@
 criaCartao(
-    '0 que e um carro',
+    'corrida',
     'O que é uma corrida',
     'corrida e uma competicao entre varios carros e quem chegar primeiro ganha'
 )
@@ -11,7 +11,13 @@ criaCartao(
 )
 
 criaCartao(
-    'existe quantas categorias de veiculos ',
+    'onibus ',
     'O que é um onibus?',
     'onibus e um transporte publico que leva varias pessoas de um ponto para o outro'
-)
+     )
+criaCartao (
+
+        'motor ',
+        'O que é um motor?',
+        'motor e a parte principal do veiculo'
+    )
